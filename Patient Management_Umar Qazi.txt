@@ -1,0 +1,57 @@
+The ojective is to create a Patient Management System that can take records of new patient, update/edit, delete or list the patients from the record.
+
+
+
+Algorithm:
+First, start with AngularJs and bootstrap to design the UI to enter details of a new patient, delete/update/search details of any patient.
+
+
+In the UI give 4 main options 
+1. Add New Patient
+2. Search Patient
+3. Update/Edit Patient Details
+4. Delete Patient Details
+
+1. After clicking on tthe Add new Patient Button it will lead to new page where in we have to:
+Create a text box to get the name of the patient
+Drop down list for Gender.
+Text box for registration ID
+A calender to enter the date of Birth
+A text box to input the blood group of the patient
+Text box to take in address 
+And lastly text box to take in the phone number.
+
+2. In search patient give a text box with drop down list to select the search criteria as in name, phone number, registration ID.
+and search according to the criteria mentioned from the database and display the details below 
+
+3. To update/ edit any patients deatils 
+give a drop down list for the criteria to be editted and overrid the previous details with the new details entered in the text box below and display the updated details.
+
+4. To delete any patients details 
+create a drop down list for the criteria to search the patient and then give a button to delete the patient's details from the database.
+
+
+
+For the Back End.
+Create classes:
+New Patient
+Search Patient
+Delete patient 
+Edit Patient
+
+
+
+In New patient 
+Create methods name(), gender(), DOB(), BG(), Add(), phone() that using jdbc will be connected to the database
+
+Search Patient
+from the front end take in the details of the criteria and the text box value to search it from the database and then send it back so as to display the searched result.
+
+Delete Patient
+from the front end take in the details of the criteria and the text box value to search it from the database and after the button is pressed to delete the details remove it completely from the database.
+
+Edit Patient
+To edit any patient take in the value of the criteria chosen and the value in the text box and cross match it with the database to search and then overrride the previous value with the new value obtained from the text box into the mentioned criteria and then send it back to display it from the database.
+
+
+ 
